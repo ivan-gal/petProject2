@@ -1,5 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.cabecera {
+    padding: 1rem;
+    border-bottom: 2px solid black;
+    background-color: #3e4e50;
+}
+
+.cabecera h1 {
+    font-size: 2.5em;
+    letter-spacing: 1.5px;
+    color: white;
+}
+
+.cabecera > nav {
+    display: flex;
+    font-size: 1.5em;
+    margin-top: 0.8em;
+    justify-content: space-evenly;
+    letter-spacing: 1.5px;
+}
+
+.cabecera > nav > a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+main {
+    background: #facfad;
+    margin: 0 2em 0 3em;
+    text-align: center;
+    box-shadow: 3px 2px 2px rgb(126, 126, 126);
+    padding: 1em;
+}
+
+main > h2 {
+    margin-top: 1em;
+}
+
+.container-personal {
+    display: flex;
+    justify-content: center;
+    gap: 2.5em;
+    margin: 2em;
+}
+
+.container-personal input {
+    margin: 4px;
+    border-radius: 4px;
+}
+
+.container-analisis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.race {
+    margin-right: 1.4em;
+}
+
+button {
+    padding: 1em;
+    border-radius: 10px;
 }
