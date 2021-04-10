@@ -42,8 +42,8 @@
 
             <form>
                 <div class="container-personal">
-                    <div class="container-pet">
-                        <p>
+                    <ul class="container-pet">
+                        <li>
                             <label for="an-name">Nombre</label>
                             <input
                                 type="text"
@@ -51,8 +51,9 @@
                                 id="an-name"
                                 required
                             />
-                        </p>
-                        <p>
+                        </li>
+
+                        <li>
                             <label for="an-esp">Especie</label>
                             <input
                                 type="text"
@@ -60,12 +61,12 @@
                                 id="an-esp"
                                 required
                             />
-                        </p>
-                        <p>
+                        </li>
+                        <li>
                             <label for="an-breed" class="race">Raza </label>
                             <input type="text" name="an-breed" id="an-breed" />
-                        </p>
-                        <p>
+                        </li>
+                        <li>
                             <label for="an-sex" class="race">Sexo</label>
                             <input
                                 type="text"
@@ -73,10 +74,11 @@
                                 id="an-sex"
                                 required
                             />
-                        </p>
-                    </div>
-                    <div class="container-human">
-                        <p>
+                        </li>
+                    </ul>
+
+                    <ul class="container-human">
+                        <li>
                             <label for="p-name">Nombre</label>
                             <input
                                 type="text"
@@ -84,8 +86,8 @@
                                 id="p-name"
                                 required
                             />
-                        </p>
-                        <p>
+                        </li>
+                        <li>
                             <label for="p-phone">Teléfono</label>
                             <input
                                 type="number"
@@ -93,32 +95,38 @@
                                 id="p-phone"
                                 minlength="9"
                             />
-                        </p>
-                        <p>
+                        </li>
+                        <li>
                             <label for="p-adress">Dirección</label>
                             <input type="text" name="p-adress" id="p-adress" />
-                        </p>
-                        <p>
+                        </li>
+                        <li>
                             <label for="p-city">Localidad</label>
                             <input type="text" name="p-city" id="p-city" />
-                        </p>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="container-analisis">
                     <p>
                         <label for="fi-amn">Anamnesis</label>
                         <br />
-                        <textarea name="fi-amn" rows="10" cols="50" id="fi-amn">
-Write something here</textarea
-                        >
+                        <textarea
+                            name="fi-amn"
+                            rows="10"
+                            cols="50"
+                            id="fi-amn"
+                        ></textarea>
                     </p>
                     <p>
                         <label for="fi-exp">Exploración física</label>
                         <br />
-                        <textarea name="fi-exp" rows="10" cols="50" id="fi-exp">
-Write something here</textarea
-                        >
+                        <textarea
+                            name="fi-exp"
+                            rows="10"
+                            cols="50"
+                            id="fi-exp"
+                        ></textarea>
                     </p>
                     <p>
                         <label for="fi-diag">Diagnóstico</label>
@@ -128,9 +136,7 @@ Write something here</textarea
                             rows="10"
                             cols="50"
                             id="fi-diag"
-                        >
-Write something here</textarea
-                        >
+                        ></textarea>
                     </p>
                     <p>
                         <label for="fi-trat">Tratamiento</label>
@@ -140,19 +146,22 @@ Write something here</textarea
                             rows="10"
                             cols="50"
                             id="fi-trat"
-                        >
-Write something here</textarea
-                        >
+                        ></textarea>
                     </p>
                     <p>
                         <label for="fi-obv">Observaciones</label>
                         <br />
-                        <textarea name="fi-obv" rows="10" cols="50" id="fi-obv">
-Write something here</textarea
-                        >
+                        <textarea
+                            name="fi-obv"
+                            rows="10"
+                            cols="50"
+                            id="fi-obv"
+                        ></textarea>
                     </p>
                 </div>
-                <button class="create-pc">Crear nuevo paciente</button>
+                <button class="create-pc form-button">
+                    Crear nuevo paciente
+                </button>
             </form>
         </main>
         <script defer src="./app23.js"></script>

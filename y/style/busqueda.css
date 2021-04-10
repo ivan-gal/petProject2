@@ -1,3 +1,5 @@
+@import url('./main.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -32,4 +34,55 @@
     padding: 0.3em;
     min-width: 4em;
     background-color: rgb(114, 160, 202);
+}
+
+table.search_table {
+    width: 70vw;
+    font-size: 1.3em;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 1.5rem;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+table.search_table th {
+    background-color: #3e4e50;
+    padding: 0.7em;
+    flex-direction: row;
+    border-collapse: collapse;
+    color: whitesmoke;
+}
+
+table.search_table tr:nth-child(odd) {
+    background-color: rgb(238, 233, 227);
+}
+
+table.search_table td {
+    border-left: 1px solid black;
+    padding: 0.4rem;
+}
+
+main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}
+
+form.search_form {
+    font-size: 1.5em;
+    margin: 1em 1em 1.5em 1em;
+}
+
+.search_form button {
+    margin: 0.5rem;
+    padding: 0.3em;
+    font-size: 0.6em;
+}
+
+.search_form input {
+    width: 15vw;
 }

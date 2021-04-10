@@ -13,9 +13,18 @@ dataref.orderByKey().on('value', (snapshot) => {
         const personName = child.child('prop_name').val();
         const personPlace = child.child('prop_city').val();
         const petSpec = child.child('animal_esp').val();
-        const mainDiv = document.createElement('div');
-        mainDiv.classList.add('perro');
-        mainDiv.innerHTML = `<div class='datos'><h2>${petName}</h2><h3>${petSpec}</h3><h3>${personName}</h3><h4>${personPlace}</h4></div><h2 class='ficha'>Acceder</h2>`;
+        const petSex = child.child('animal_sex').val();
+        const personPhone = child.child('prop_phone').val();
+        const tableRow = document.createElement('tr');
+        tableRow.innerHTML = `<tr>
+                            <td>${petName}</td>
+                            <td>${petSpec}</td>
+                            <td>${petSex}</td>
+                            <td>${personName}</td>
+                            <td>${personPlace}</td>
+                            <td>${personPhone}</td>
+                            <td><button>Acceder</button></td>
+                        </tr>`;
         bloqueDiv.append(mainDiv);
     });
 });

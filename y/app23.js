@@ -51,14 +51,13 @@ createButton.addEventListener('click', (e) => {
                         fi_obs: fichaObservacion.value,
                     },
                 });
+            dataref.on('child_added', (snapshot) => {
+                alert('Has añadido a una nueva mascota');
+            });
         } catch (error) {
             alert(error);
         }
     } else {
         alert('Rellena los campos obligatorios.');
     }
-});
-
-dataref.on('child_added', (snapshot) => {
-    alert('Has añadido a una nueva mascota');
 });

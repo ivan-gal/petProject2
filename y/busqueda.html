@@ -29,26 +29,78 @@
         <link rel="stylesheet" href="./style/busqueda.css" />
     </head>
     <body>
-        <header><h1>Busqueda de Historiales</h1></header>
-        <nav>
-            <a href="./index.html">Principal</a>
-            <a href="./busqueda.html">Busqueda historiales</a>
-            <a href="./ficha.html">Introducir nueva ficha clinica</a>
-        </nav>
+        <div class="cabecera">
+            <header><h1>Busqueda de Historiales</h1></header>
+            <nav>
+                <a href="./index.html">Principal</a>
+                <a href="./busqueda.html">Busqueda historiales</a>
+                <a href="./ficha.html">Introducir nueva ficha clinica</a>
+            </nav>
+        </div>
         <div class="main-container">
-        <main>
-            <form action="">
-                <p>
-                    <label for="busqueda">Busqueda de Historiales</label>
-                    <br />
-                    <input type="text" name="busqueda" />
-                </p>
-                <button>Buscar</button>
-            </form>
-            <div class="perrosBusqueda">
+            <main>
+                <form action="" class="search_form">
+                    <p>
+                        <label for="busqueda">Busqueda de Historiales</label>
+                        <br />
+                        <input type="text" name="busqueda" />
+                        <button>Buscar</button>
+                    </p>
+                </form>
+
+                <div class="perrosBusqueda">
+                    <table class="search_table">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Especie</th>
+                            <th>Sexo</th>
+
+                            <th>Propietario</th>
+
+                            <th>Ciudad</th>
+
+                            <th>Teléfono</th>
+                            <th>Datos</th>
+                        </tr>
+                        <tr>
+                            <td>Kinder</td>
+                            <td>Perro</td>
+                            <td>Macho</td>
+                            <td>Naiara</td>
+                            <td>San sebastian</td>
+                            <td>32242</td>
+                            <td><button>Acceder</button></td>
+                        </tr>
+                        <tr>
+                            <td>Peggy</td>
+                            <td>Perro</td>
+                            <td>Macho</td>
+                            <td>Naiara</td>
+                            <td>San sebastian</td>
+                            <td>32242</td>
+                            <td><button>Acceder</button></td>
+                        </tr>
+                        <tr>
+                            <td>Perro</td>
+                            <td>Perro</td>
+                            <td>Macho</td>
+                            <td>Naiara</td>
+                            <td>San sebastian</td>
+                            <td>32242</td>
+                            <td><button>Acceder</button></td>
+                        </tr>
+                        <tr>
+                            <td>Koa</td>
+                            <td>Perro</td>
+                            <td>Macho</td>
+                            <td>Naiara</td>
+                            <td>San sebastian</td>
+                            <td>32242</td>
+                            <td><button>Acceder</button></td>
+                        </tr>
+                    </table>
                 </div>
-            </div>
-        </main>
+            </main>
         </div>
         <script defer src="./busqueda.js"></script>
     </body>
