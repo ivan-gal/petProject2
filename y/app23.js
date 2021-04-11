@@ -14,6 +14,13 @@ const fichaExploracion = document.querySelector('#fi-exp');
 const fichaObservacion = document.querySelector('#fi-obv');
 const fichaTratamiento = document.querySelector('#fi-trat');
 
+const todayDate = new Date();
+const euroDate =
+    todayDate.getDate() +
+    '-' +
+    todayDate.getMonth() +
+    '-' +
+    todayDate.getFullYear();
 //Button
 
 const createButton = document.querySelector('.create-pc');
@@ -43,12 +50,21 @@ createButton.addEventListener('click', (e) => {
                     prop_phone: personPhone.value,
                     prop_city: personCity.value,
                     person_adress: personAdress.value,
+                    regis_date: euroDate,
                     clinical_info: {
-                        fi_Amn: fichaAnamnesis.value,
-                        fi_Diag: fichaDiagnostico.value,
-                        fi_Exp: fichaExploracion.value,
-                        fi_trat: fichaTratamiento.value,
-                        fi_obs: fichaObservacion.value,
+                        euroDate: {
+                            fi_Amn: fichaAnamnesis.value,
+                            fi_Diag: fichaDiagnostico.value,
+                            fi_Exp: fichaExploracion.value,
+                            fi_trat: fichaTratamiento.value,
+                            fi_obs: fichaObservacion.value,
+                            regis_date:
+                                todayDate.getDate() +
+                                '-' +
+                                todayDate.getMonth() +
+                                '-' +
+                                todayDate.getFullYear(),
+                        },
                     },
                 });
             dataref.on('child_added', (snapshot) => {

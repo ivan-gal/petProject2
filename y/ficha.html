@@ -1,20 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Document</title>
-</head>
-<body>
-                <script src="/__/firebase/8.3.2/firebase-app.js"></script>
-                <script src="/__/firebase/init.js"></script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -41,60 +26,623 @@
     -->
         <script defer src="/__/firebase/init.js?useEmulator=true"></script>
         <script defer src="/__/firebase/init.js"></script>
-        <link rel="stylesheet" href="./style/ficha.css">
+        <link rel="stylesheet" href="./style/ficha.css" />
     </head>
     <body>
-   <header><h1>Clinica Animalejos: Introducir nueva ficha clínica</h1></header>
-        <nav>
-            <a href="./index.html">Principal</a>
-            <a href="./busqueda.html">Busqueda historiales</a>
-            <a href="./ficha.html">Introducir nueva ficha clinica</a>
-        </nav>
+        <div class="cabecera">
+            <header>
+                <h1>Clinica Animalejos: Ficha clínica</h1>
+            </header>
+            <nav>
+                <a href="./index.html">Principal</a>
+                <a href="./busqueda.html">Busqueda historiales</a>
+            </nav>
+        </div>
         <main>
-            <div class="datos-Perro">
-            <h1>Kinder</h1>
-            <h2>Especie</h2>
-            <h3>Raza</h3>
-            <h3>Sexo</h3>
+            <div class="main_info">
+                <div class="info_container">
+                    <ul class="datos-Perro"></ul>
+                    <ul class="datos-prop"></ul>
+                </div>
+                <div class="clin_di">
+                    <h3>Diagnosis</h3>
+                    <ul class="details_fic">
+                        <li>
+                            <details>
+                                <summary>02/11/2012</summary>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>02/11/2012</summary>
+                                <h2>Amnesis</h2>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                                <h2>Exploración física</h2>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                                <h2>Exploración física</h2>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>02/11/2012</summary>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>02/11/2012</summary>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>02/11/2012</summary>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>02/11/2012</summary>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>02/11/2012</summary>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>02/11/2012</summary>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit. Eaque, iure? Veniam earum
+                                    sunt aliquid explicabo, facilis pariatur
+                                    ipsam labore tempora quia culpa,
+                                    reprehenderit molestias alias eligendi rem
+                                    nostrum sit ipsum atque quo cum. Error
+                                    tempora iste obcaecati voluptatum, optio,
+                                    provident voluptatibus vero fugiat tenetur
+                                    eum officiis voluptates repellendus non
+                                    illum? Dolore, molestias corporis. Officia,
+                                    veniam tempore tenetur, quis, earum cum
+                                    distinctio quia rem quam exercitationem
+                                    quidem. Praesentium quibusdam tenetur
+                                    quaerat cumque. Cumque enim exercitationem
+                                    nemo iure autem hic provident animi a?
+                                    Cupiditate iure vitae nesciunt quasi labore
+                                    consectetur tempora temporibus sunt a!
+                                    Architecto perferendis velit nostrum harum
+                                    itaque asperiores reprehenderit.
+                                </p>
+                            </details>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="datos-prop">
-            <h2>Dueño</h2>
-            <h3>Telefono</h3>
-            <h4>Direción</h4>
-            <h5>Localidad</h5>
-            </div>
-            <h2>Introducir nueva consulta</h2>
+
             <form action="">
-                <fieldset>
-                    <legend>Datos Paciente</legend>
+                <h2>Introducir nueva consulta</h2>
+                <div class="container-analisis">
                     <p>
                         <label for="fi-amn">Anamnesis</label>
-                        <br>
-                        <textarea name="fi-amn" rows="10" cols="50">Write something here</textarea>
+                        <br />
+                        <textarea name="fi-amn" rows="10" cols="50">
+Write something here</textarea
+                        >
                     </p>
                     <p>
                         <label for="fi-exp">Exploración física</label>
-                        <br>
-                        <textarea name="fi-exp" rows="10" cols="50">Write something here</textarea>
+                        <br />
+                        <textarea name="fi-exp" rows="10" cols="50">
+Write something here</textarea
+                        >
                     </p>
                     <p>
                         <label for="an-esp">Diagnóstico</label>
-                        <br>
-                        <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+                        <br />
+                        <textarea name="textarea" rows="10" cols="50">
+Write something here</textarea
+                        >
                     </p>
                     <p>
                         <label for="an-breed">Tratamiento</label>
-                        <br>
-                        <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+                        <br />
+                        <textarea name="textarea" rows="10" cols="50">
+Write something here</textarea
+                        >
                     </p>
                     <p>
                         <label for="an-sex">Observaciones</label>
-                        <br>
-                        <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+                        <br />
+                        <textarea name="textarea" rows="10" cols="50">
+Write something here</textarea
+                        >
                     </p>
-                </fieldset>
-                <button>Crear nueva ficha de paciente</button>
-                <form action=""></form>
-        <script defer src="./busqueda.js"></script>
+                </div>
+                <button class="form-button">
+                    Crear nueva ficha de paciente
+                </button>
+            </form>
+        </main>
+
+        <script defer src="./ficha.js"></script>
     </body>
 </html>

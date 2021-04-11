@@ -63,6 +63,13 @@ table.search_table td {
     padding: 0.4rem;
 }
 
+table.search_table button {
+    padding: 0.3rem;
+    box-shadow: 1, 5px 1px 1px rgb(56, 56, 56);
+    background-color: #3e4e50;
+    color: whitesmoke;
+}
+
 main {
     margin: auto;
     display: flex;
@@ -85,4 +92,11 @@ form.search_form {
 
 .search_form input {
     width: 15vw;
+    min-width: 15rem;
+    font-size: 0.7em;
+}
+
+div.info_container {
+    display: flex;
+    flex-direction: column;
 }

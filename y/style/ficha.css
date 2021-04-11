@@ -1,6 +1,35 @@
-form > fieldset {
+@import url('./main.css');
+
+main {
+    text-align: start;
+}
+div.info_container {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+div.info_container li {
+    font-size: 1.2em;
+    padding: 0.3em;
+}
+
+.main_info {
     display: flex;
 }
 
-.main-container {
+.clin_di {
+    display: flex;
+    margin: 1rem;
+}
+
+.clin_di li {
+    font-size: 1.2em;
+    padding: 0.3em;
+}
+
+.clin_di ul {
+    display: flex;
+    max-width: 40vw;
+    flex-wrap: wrap;
 }
