@@ -100,3 +100,23 @@ div.info_container {
     display: flex;
     flex-direction: column;
 }
+
+@media (max-width: 900px) {
+    main {
+        font-size: 0.7em;
+    }
+    button {
+        font-size: 00.7em;
+        width: 7vw;
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        font-size: 0.5em;
+    }
+    button {
+        font-size: 00.7em;
+        width: 7vw;
+    }
+}

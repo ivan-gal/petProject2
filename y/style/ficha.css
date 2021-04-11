@@ -33,3 +33,46 @@ div.info_container li {
     max-width: 40vw;
     flex-wrap: wrap;
 }
+
+details {
+    margin: 1.3rem 0;
+    padding: 0.5rem;
+    height: auto;
+    max-height: 1.5rem; /* set to line heihgt */
+    transition: all 0.1s ease;
+}
+
+details[open] {
+    max-height: 150rem;
+    transition: all 1s ease;
+    border: 1px solid #aaa;
+    background-color: whitesmoke;
+}
+
+details summary {
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.8em;
+}
+
+@media (max-width: 700px) {
+    main {
+        font-size: 0.5em;
+    }
+    button {
+        font-size: 00.7em;
+        width: 7vw;
+    }
+
+    text-area {
+        width: 10px;
+    }
+}

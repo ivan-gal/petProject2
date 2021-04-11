@@ -61,6 +61,15 @@ form {
     width: fit-content;
 }
 
+@media (max-width: 700px) {
+    .container-personal {
+        flex-direction: column;
+    }
+    textarea {
+        width: 70vw;
+    }
+}
+
 ul {
     list-style: none;
 }
@@ -92,4 +101,10 @@ button.form-button {
     width: fit-content;
     color: whitesmoke;
     font-size: 1.2em;
+}
+
+input {
+    padding: 10px;
+    border: 0;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
