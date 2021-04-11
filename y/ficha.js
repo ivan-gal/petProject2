@@ -1,100 +1,122 @@
 const database = firebase.database();
 const dataref = database.ref().child('animalejos');
 
+const rootRef = database.ref('animalejos');
 let currentUrl = window.location.href;
-currentUrl = currentUrl.toString().split('=');
-const currentId = currentUrl[1];
+// currentUrl = currentUrl.toString().split('=');
+const currentId = currentUrl.slice(
+    currentUrl.indexOf('=') + 1,
+    currentUrl.length
+);
 
 //Get docu things
-console.log(currentId);
-const databaseDog = dataref.child(currentUrl[1]).val();
-console.log(databaseDog);
 
-const dogData = document.querySelector('.datos-perro');
+const todayDate = new Date();
+const dogData = document.querySelector('.datos-Perro');
 const propData = document.querySelector('.datos-prop');
 const detailsUl = document.querySelector('.details_fic');
+const deleteBtn = document.querySelector('.delete_btn');
 
-if (databaseDog.child('animal_name').val()) {
-    const liName = document.createElement('li');
-    liName.textContent = databaseDog.child('animal_name').val();
-}
-if (databaseDog.child('prop_name').val()) {
-    const liNameProp = document.createElement('li');
-    liNameProp.textContent = databaseDog.child('prop_name').val();
-}
-if (databaseDog.child('prop_city').val()) {
-    const liCityProp = document.createElement('li');
-    liCityProp.textContent = databaseDog.child('prop_city').val();
-}
-if (databaseDog.child('animal_esp').val()) {
-    const liEsp = document.createElement('li');
-    liEsp.textContent = databaseDog.child('animal_esp').val();
-}
-if (databaseDog.child('animal_sex').val()) {
-    const liSex = document.createElement('li');
-    liSex.textContent = databaseDog.child('animal_sex').val();
-}
-if (databaseDog.child('prop_phone').val()) {
-    const liPhone = document.createElement('li');
-    liPhone.textContent = databaseDog.child('prop_phone').val();
-}
-if (databaseDog.child('person_adress').val()) {
-    const liAdress = document.createElement('li');
-    liSex.textContent = databaseDog.child('person_adress').val();
-}
-if (databaseDog.child('regis_date').val()) {
-    const liDate = document.createElement('li');
-    liDate.textContent = databaseDog.child('regis_date').val();
-}
-if (databaseDog.child('animal_breed').val()) {
-    const liBreed = document.createElement('li');
-    liBreed.textContent = databaseDog.child('animal_breed').val();
-}
+//Add data
 
-const dogClinic = databaseDog.child('clinical_info');
+const fichaAnamnesis = document.querySelector('#fi-amn');
+const fichaDiagnostico = document.querySelector('#fi-diag');
+const fichaExploracion = document.querySelector('#fi-exp');
+const fichaObservacion = document.querySelector('#fi-obv');
+const fichaTratamiento = document.querySelector('#fi-trat');
 
-dogClinic.orderByKey().on('value', (snapshot) => {
+const formButton = document.querySelector('.form-button');
+
+dataref.orderByKey().on('value', (snapshot) => {
     snapshot.forEach((child) => {
-        const detailsLi = document.createElement('li');
-        const fiAmn = child.child('fi_Amn').val();
-        const fiDiag = child.child('fi_Diag').val();
-        const fiExp = child.child('fi_Exp').val();
-        const fiObs = child.child('fi_obs').val();
-        const fiTrat = child.child('fi_trat').val();
-        detailsLi.innerHTML = `<details>
-                                <summary>02/11/2012</summary>
+        if (child.key === currentId) {
+            const petName = child.child('animal_name').val();
+            const petBreed = child.child('animal_breed').val();
+            const petSpec = child.child('animal_esp').val();
+            const petSex = child.child('animal_sex').val();
+            const propName = child.child('prop_name').val();
+            const propCity = child.child('prop_city').val();
+            const propPhone = child.child('prop_phone').val();
+            const propAdress = child.child('person_adress').val();
+            const regisDate = child.child('regis_date').val();
+            dogData.innerHTML = `<li>${petName}</li>
+                        <li>${petSpec}</li>
+                        <li>${petName}</li>
+                        <li>${petSex}</li>
+                        <li>Registro</li>`;
+            propData.innerHTML = `<li>${propName}</li>
+                        <li>${propPhone}</li>
+                        <li>${propAdress}</li>
+                        <li>${propCity}</li>
+                        <li>${regisDate}</li>`;
+
+            child.forEach((subChild) => {
+                if (subChild.key === 'clinical_info') {
+                    subChild.forEach((eachClinical) => {
+                        const petAmn = eachClinical.child('fi_Amn').val();
+                        const petDiag = eachClinical.child('fi_Diag').val();
+                        const petObs = eachClinical.child('fi_obs').val();
+                        const petTrat = eachClinical.child('fi_Trat').val();
+                        const petExp = eachClinical.child('fi_Exp').val();
+                        const diaDate = eachClinical.child('regis_date').val();
+                        const newLi = document.createElement('li');
+
+                        newLi.innerHTML = `
+                            <details>
+                                <summary>${diaDate}</summary>
                                 <h2>Amnesis</h2>
                                 <p>
-                                ${fiAmn}
+                                ${petAmn}
                                 </p>
                                 <h2>Diagnóstico</h2>
                                 <p>
-                                ${fiDiag}
+                                ${petDiag}
                                 </p>
-                                <h2>Exploración física</h2>
+                                <h2>Exploración</h2>
                                 <p>
-                                ${fiExp}
+                                ${petExp}
                                 </p>
-                                <h2>Observaciones</h2>
+                                <h2>Observación</h2>
                                 <p>
-                                ${fiObs}
+                                ${petObs}
                                 </p>
                                 <h2>Tratamiento</h2>
                                 <p>
-                                ${fiTrat}
+                                ${petTrat}
                                 </p>
-                            </details>`;
-        detailsUl.append(detailsLi);
+                            </details>
+                        `;
+                        detailsUl.append(newLi);
+                    });
+                }
+            });
+        }
     });
 });
 
-dogData.append(liName);
-dogData.append(liEsp);
-dogData.append(liBreed);
-dogData.append(liSex);
-dogData.append(liDate);
+formButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    database
+        .ref(`animalejos/${currentId}/clinical_info`)
+        .push()
+        .set({
+            fi_Amn: fichaAnamnesis.value,
+            fi_Diag: fichaDiagnostico.value,
+            fi_Exp: fichaExploracion.value,
+            fi_trat: fichaTratamiento.value,
+            fi_obs: fichaObservacion.value,
+            regis_date:
+                todayDate.getDate() +
+                '-' +
+                todayDate.getMonth() +
+                '-' +
+                todayDate.getFullYear(),
+        });
+});
 
-propData.append(liNameProp);
-propData.append(liPhone);
-propData.append(liAdress);
-propData.append(liCityProp);
+deleteBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    console.log(currentId);
+    rootRef.child(currentId).remove();
+    window.open('./busqueda.html').focus();
+});

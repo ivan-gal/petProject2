@@ -2,16 +2,45 @@
 
 main {
     text-align: start;
+    font-family: 'Roboto';
 }
 div.info_container {
     display: flex;
     gap: 1rem;
+}
+
+div.delete-container {
+    display: flex;
+    flex-direction: column;
     margin: 1rem;
+    padding: 1em;
+    background-color: whitesmoke;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 12.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 11.8px 8.4px rgba(0, 0, 0, 0.086), 10px 20px rgba(0, 0, 0, 0.12);
+    height: fit-content;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+div.delete-container button {
+    background-color: red;
+    color: white;
+    height: 2em;
+    font-size: 1.2em;
+    border-radius: 10px;
 }
 
 div.info_container li {
     font-size: 1.2em;
     padding: 0.3em;
+}
+
+ul.datos-Perro li:first-of-type,
+ul.datos-prop li:first-of-type {
+    font-size: 1.5em;
+    font-weight: 500;
 }
 
 .main_info {
@@ -61,6 +90,14 @@ details summary {
 details[open] summary {
     border-bottom: 1px solid #aaa;
     margin-bottom: 0.8em;
+}
+
+form h2 {
+    margin: 1em;
+    font-size: 1.5em;
+}
+.container-analisis label {
+    font-size: 1.15em;
 }
 
 @media (max-width: 700px) {

@@ -23,13 +23,17 @@ dataref.orderByKey().on('value', (snapshot) => {
                             <td>${personName}</td>
                             <td>${personPlace}</td>
                             <td>${personPhone}</td>
-                            <td><button class="ficha">Acceder</button></td>
                         `;
-        tablaSearch.append(tableRow);
 
-        const fichaButton = document.querySelector('.ficha');
-        fichaButton.addEventListener('click', (e) => {
+        const newTD = document.createElement('td');
+        const button = document.createElement('button');
+        button.textContent = 'Acceder';
+        button.addEventListener('click', () => {
             window.open('./ficha.html?id=' + childKey, '_blank').focus();
         });
+        newTD.append(button);
+        tableRow.append(newTD);
+
+        tablaSearch.append(tableRow);
     });
 });

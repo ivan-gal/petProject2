@@ -52,7 +52,7 @@ createButton.addEventListener('click', (e) => {
                     person_adress: personAdress.value,
                     regis_date: euroDate,
                     clinical_info: {
-                        euroDate: {
+                        [euroDate]: {
                             fi_Amn: fichaAnamnesis.value,
                             fi_Diag: fichaDiagnostico.value,
                             fi_Exp: fichaExploracion.value,
