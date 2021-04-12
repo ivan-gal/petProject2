@@ -1,3 +1,12 @@
+const auth = firebase.auth();
+setTimeout(function () {
+    auth.onAuthStateChanged((firebaseUser) => {
+        if (firebaseUser === null) {
+            window.location = './index.html';
+        }
+    });
+}, 2000);
+
 const database = firebase.database();
 const dataref = database.ref().child('animalejos');
 
@@ -56,7 +65,7 @@ dataref.orderByKey().on('value', (snapshot) => {
                         const petAmn = eachClinical.child('fi_Amn').val();
                         const petDiag = eachClinical.child('fi_Diag').val();
                         const petObs = eachClinical.child('fi_obs').val();
-                        const petTrat = eachClinical.child('fi_Trat').val();
+                        const petTrat = eachClinical.child('fi_trat').val();
                         const petExp = eachClinical.child('fi_Exp').val();
                         const diaDate = eachClinical.child('regis_date').val();
                         const newLi = document.createElement('li');
@@ -112,11 +121,17 @@ formButton.addEventListener('click', (e) => {
                 '-' +
                 todayDate.getFullYear(),
         });
+    window.open('./ficha.html?=' + currentId).focus();
 });
 
 deleteBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    console.log(currentId);
-    rootRef.child(currentId).remove();
-    window.open('./busqueda.html').focus();
+    auth.onAuthStateChanged((firebaseUser) => {
+        if (firebaseUser != null) {
+            rootRef.child(currentId).remove();
+            window.open('./busqueda.html').focus();
+        } else {
+            window.open('./index.html').focus();
+        }
+    });
 });

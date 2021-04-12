@@ -32,7 +32,7 @@
         <div class="cabecera">
             <header><h1>Busqueda de Historiales</h1></header>
             <nav>
-                <a href="./index.html">Principal</a>
+                <a href="./create.html">Principal</a>
                 <a href="./busqueda.html">Busqueda historiales</a>
             </nav>
         </div>
@@ -42,8 +42,13 @@
                     <p>
                         <label for="busqueda">Busqueda de Historiales</label>
 
-                        <input type="text" name="busqueda" />
-                        <button>Buscar</button>
+                        <input
+                            type="text"
+                            name="busqueda"
+                            class="search_bar"
+                            placeholder="Diferencia mayúsculas/minúsculas"
+                        />
+                        <button class="search_button">Buscar</button>
                     </p>
                 </form>
 
@@ -56,9 +61,9 @@
 
                             <th>Propietario</th>
 
-                            <th>Ciudad</th>
+                            <th class="dis_phone">Ciudad</th>
 
-                            <th>Teléfono</th>
+                            <th class="dis_phone">Teléfono</th>
                             <th>Datos</th>
                         </tr>
                     </table>

@@ -7,6 +7,10 @@
     font-family: 'Roboto';
 }
 
+body {
+    background-color: #90a493;
+}
+
 .cabecera {
     padding: 1rem;
     border-bottom: 2px solid black;
@@ -32,13 +36,35 @@
     color: whitesmoke;
 }
 
+@media (max-width: 500px) {
+    .cabecera {
+        font-size: 0.8em;
+    }
+    .cabecera > nav {
+        flex-direction: column;
+    }
+}
+
 main {
-    background: #facfad;
+    background: whitesmoke;
     margin: 0 3em 0 3em;
     text-align: center;
-    box-shadow: 3px 2px 2px rgb(126, 126, 126);
+    box-shadow: 3px 2px 2px rgb(211, 210, 210);
     padding: 1em;
     width: auto;
+}
+
+@media (max-width: 400px) {
+    input {
+        max-width: 50vw;
+    }
+    textarea {
+        max-width: 50vw;
+        height: 15vh;
+    }
+}
+
+@media (max-width: 500px) {
 }
 
 main > h2 {
@@ -49,7 +75,6 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: fit-content;
 }
 
 .container-personal {
@@ -107,4 +132,15 @@ input {
     padding: 10px;
     border: 0;
     box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+.container-analisis label {
+    margin: 0.1em;
+    font-size: 1.2em;
+    display: block;
+}
+
+.input_prop {
+    position: relative;
+    left: -10px;
 }

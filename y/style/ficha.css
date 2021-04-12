@@ -12,6 +12,7 @@ div.info_container {
 div.delete-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 1rem;
     padding: 1em;
     background-color: whitesmoke;
@@ -25,11 +26,21 @@ div.delete-container {
 }
 
 div.delete-container button {
-    background-color: red;
+    background-color: rgb(187, 33, 33);
     color: white;
     height: 2em;
     font-size: 1.2em;
     border-radius: 10px;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+@media (max-width: 500px) {
+    .main_info {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 div.info_container li {
@@ -111,5 +122,15 @@ form h2 {
 
     text-area {
         width: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main_info {
+        display: flex;
+        flex-direction: column;
+    }
+    details {
+        max-width: 50vw;
     }
 }

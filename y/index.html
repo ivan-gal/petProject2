@@ -26,143 +26,22 @@
     -->
         <script defer src="/__/firebase/init.js?useEmulator=true"></script>
         <script defer src="/__/firebase/init.js"></script>
-        <link rel="stylesheet" href="./style/main.css" />
+        <link rel="stylesheet" href="./style/login.css" />
     </head>
     <body>
         <div class="cabecera">
-            <header><h1>Clinica Animalejos: Crear nueva ficha</h1></header>
-            <nav>
-                <a href="./index.html">Principal</a>
-                <a href="./busqueda.html">Busqueda historiales</a>
-            </nav>
+            <header><h1>Clinica Animalejos: Historial clínico.</h1></header>
+            
         </div>
-        <main>
-            <h2>Introducir nuevo paciente</h2>
-
-            <form>
-                <div class="container-personal">
-                    <ul class="container-pet">
-                        <li>
-                            <label for="an-name">Nombre</label>
-                            <input
-                                type="text"
-                                name="an-name"
-                                id="an-name"
-                                required
-                            />
-                        </li>
-
-                        <li>
-                            <label for="an-esp">Especie</label>
-                            <input
-                                type="text"
-                                name="an-esp"
-                                id="an-esp"
-                                required
-                            />
-                        </li>
-                        <li>
-                            <label for="an-breed" class="race">Raza </label>
-                            <input type="text" name="an-breed" id="an-breed" />
-                        </li>
-                        <li>
-                            <label for="an-sex" class="race">Sexo</label>
-                            <input
-                                type="text"
-                                name="an-sex"
-                                id="an-sex"
-                                required
-                            />
-                        </li>
-                    </ul>
-
-                    <ul class="container-human">
-                        <li>
-                            <label for="p-name">Nombre</label>
-                            <input
-                                type="text"
-                                name="p-name"
-                                id="p-name"
-                                required
-                            />
-                        </li>
-                        <li>
-                            <label for="p-phone">Teléfono</label>
-                            <input
-                                type="number"
-                                name="p-phone"
-                                id="p-phone"
-                                minlength="9"
-                            />
-                        </li>
-                        <li>
-                            <label for="p-adress">Dirección</label>
-                            <input type="text" name="p-adress" id="p-adress" />
-                        </li>
-                        <li>
-                            <label for="p-city">Localidad</label>
-                            <input type="text" name="p-city" id="p-city" />
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="container-analisis">
-                    <p>
-                        <label for="fi-amn">Anamnesis</label>
-                        <br />
-                        <textarea
-                            name="fi-amn"
-                            rows="10"
-                            cols="50"
-                            id="fi-amn"
-                        ></textarea>
-                    </p>
-                    <p>
-                        <label for="fi-exp">Exploración física</label>
-                        <br />
-                        <textarea
-                            name="fi-exp"
-                            rows="10"
-                            cols="50"
-                            id="fi-exp"
-                        ></textarea>
-                    </p>
-                    <p>
-                        <label for="fi-diag">Diagnóstico</label>
-                        <br />
-                        <textarea
-                            name="fi-diag"
-                            rows="10"
-                            cols="50"
-                            id="fi-diag"
-                        ></textarea>
-                    </p>
-                    <p>
-                        <label for="fi-trat">Tratamiento</label>
-                        <br />
-                        <textarea
-                            name="fi-trat"
-                            rows="10"
-                            cols="50"
-                            id="fi-trat"
-                        ></textarea>
-                    </p>
-                    <p>
-                        <label for="fi-obv">Observaciones</label>
-                        <br />
-                        <textarea
-                            name="fi-obv"
-                            rows="10"
-                            cols="50"
-                            id="fi-obv"
-                        ></textarea>
-                    </p>
-                </div>
-                <button class="create-pc form-button">
-                    Crear nuevo paciente
-                </button>
-            </form>
-        </main>
-        <script defer src="./app23.js"></script>
+         <div class="main">
+    <p class="sign" align="center">Entrar</p>
+    <form class="form1">
+      <input class="un " type="text" align="center" placeholder="Usuario">
+      <input class="pass" type="password" align="center" placeholder="Contraseña">
+      <a class="submit" align="center">Acceder</a>
+            
+                
+    </div>
+        <script defer src="./login.js"></script>
     </body>
 </html>
